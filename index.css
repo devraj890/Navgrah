@@ -1,0 +1,277 @@
+.call-button {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 20px auto;
+  }
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+
+/*testimonial section css*/
+
+.testimonial {
+  background-image: url(../images/images1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.testim-box {
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  margin: 3rem 0;
+  padding: 4rem;
+  background-color: rgba(204, 204, 204, 0.199);
+  border-radius: 2rem;
+}
+
+.testim-box h4 {
+  color: rgb(124, 27, 27);
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.555);
+  margin: 0;
+  padding: 0;
+}
+
+.testim-box h5 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.testim-box p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* for the testmonial of the reivew 
+ */
+ .containers {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  top: 35%;
+  left: 49%;
+  right: -33%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  padding: 10px;
+}
+/* text {
+  position: absolute;
+  top: 26%;
+  left: 49%;
+  right: -33%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+} */
+
+.customer-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+.customer-info p{
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+/* .testimonial end */
+/* call icon  */
+@keyframes floatAnimation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.call-icon {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 10000; /* Ensure it's above other content */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.call-icon img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+/* Hover effect for the icon */
+.call-icon:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+  /* Styles for the language toggle button */
+  .language-toggle {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Responsive video styling */
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for widescreen videos */
+    overflow: hidden;
+    margin-bottom: 4rem;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+/* for the footer icon  */
+/* 
+.footer {
+  Your footer styles here 
+  
+}
+*/
+.footer p {
+  margin-top: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a img {
+  height: 30px; /* Adjust the height as needed */
+  border-radius: 50%; /* To make the icons circular */
+}
+
+/* for the dislpay of the top three images */
+.icon-contens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+   /* Adjust as needed */
+}
+
+
+.centered-image {
+ margin-left: 1.5rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* navbar css  */
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .menu-img {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar .menu-img {
+    float: right;
+    display: block;
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+    cursor: pointer;
+    margin: 12px; /* Adjust the margin as needed */
+    background-color: #ddd;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .menu-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.navbar img{
+  color: #ddd;
+}
